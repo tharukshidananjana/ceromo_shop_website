@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+	<link rel="stylesheet" type="text/css" href="ceramo.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+	
+<header>
+			
+			<h2>CERAMO</h2>
+<button id="menu-btn">&#9776;</button> 
+            <ul class="navbar">
+            	
+            	<li><a href="#home">Home</a></li>
+            	<li><a href="#about">About us</a></li>
+            	<li><a href="#collection">Collection</a></li>
+            	<li><a href="#shop">shop</a></li>
+            	<li><a href="#contacts">Contacts</a></li>
+</ul>
+
+		</header>
+<!-- home -->
+		<section class="home" id="home">
+			<div class="home-text">
+				<h1>Handcrafted with care for memorable moments.</h1>
+				<p>shop the collection</p>
+				<br>
+				<input id="search" type="text" name="search" placeholder="Search here" ><br>
+			<button id="btn1" type="submit">search</button>
+			</div>
+			</section>
+			<!-- about -->
+			<section class="about" id="about">
+				<div class="about-img">
+				<img src="img/about.jpg">
+			</div>
+			<div class="about-text">
+				<h1>About Us</h1>
+            <b>
+            <p>Ceramo is a gathering of multi skilled, efficient, craftspeople capable of working with various ceramic bodies and techniques to bring your ideas to life. We work with designers, manufacturers, innovators and artists from concept realization and all the way to retail shelf.</p>
+            </b>
+            <br>
+            <h2>Our Story</h2>
+            <b>
+            <p>Founded in [2003], our journey began with a passion for pottery and an appreciation for fine craftsmanship. Each piece is thoughtfully designed and carefully made by skilled artisans, ensuring unique and high-quality creations.</p>
+            </b>
+            <br>
+            <h2>What We Offer</h2>
+            <p>
+            <b>
+                Handmade ceramic tableware</p>
+                <p>Decorative pottery</p>
+                <p>Custom-designed ceramics</p>
+                <p>Workshops & pottery classes</p>
+            </b>
+            <br>
+            <br>
+            <a href="#"class="btn">learn more</a>
+</div>
+</section>
+<!-- collection -->
+    
+<section class="products" id="collection">
+        <h2 class="header">OUR PRODUCT</h2>
+        <ul class="nav">
+            <li class="list"><a href="default.asp" class="link"><u>ALL PRODUCT</u></a></li>
+            <li class="list"><a href="news.asp" class="link">HOMEWEAR</a></li>
+            <li class="list"><a href="contact.asp" class="link">TABLEWEAR</a></li>
+            <li class="list"><a href="about.asp" class="link">KITCHENWEAR</a></li>
+        </ul>
+        <div class="product-container">
+            <div class="box">
+                <img src="img/second.jpg" alt="ceramic"><br>
+                <h3>PLATE</h3>
+                <div class="content">
+                    <span>$250</span>
+                    <p>BODY – IVORY STONEWARE GLAZE – MATT BLACK/TRANSPARENT</p>
+                    <button class="add-to-cart" data-name="PLATE" data-price="250">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/third.jpg" alt="ceramic"><br>
+                <h3>TEA CUP</h3>
+                <div class="content">
+                    <span>$150</span>
+                    <p>BODY – BLACK PORCELAIN GLAZE – INSIDE WHITE</p>
+                    <button class="add-to-cart" data-name="TEA CUP" data-price="150">Add to Cart</button>
+  </div>
+            </div>
+
+            <div class="box">
+                <img src="img/five.jpg" alt="ceramic"><br>
+                <h3>VASE</h3>
+                <div class="content">
+                    <span>$350</span>
+                    <p>BODY – STONEWARE GLAZE – MATTE BLACK</p>
+                    <button class="add-to-cart" data-name="VASE" data-price="350">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/six.jpg" alt="ceramic"><br>
+                <h3>TABLE LAMP</h3>
+                <div class="content">
+                    <span>$550</span>
+                    <p>BODY – BLACK PORCELAIN</p>
+                    <button class="add-to-cart" data-name="TABLE LAMP" data-price="550">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/seven.jpg" alt="ceramic"><br>
+                <h3>BOWL</h3>
+                <div class="content">
+                    <span>$350</span>
+                    <p>BODY – BLACK PORCELAIN GLAZE – SEMI MATTE</p>
+                    <button class="add-to-cart" data-name="BOWL" data-price="350">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+		<img src="img/foruth.jpg" alt="ceramic" ><br>
+		<h3>JUG</h3>
+		<div class ="content">
+		<span>$350</span>
+		<p>BODY – IVORY STONEWARE
+           GLAZE – TRANSPARENT DECORATION METHOD – HAND PAINTED</p><br>
+		  <button class="add-to-cart" data-name="JUG" data-price="350">Add to Cart</button>
+		</div>
+        </div>
+    </section>
+
+   
+
+<!-- shop -->
+<section class="shop" id="shop">
+	 <h2 class="our">Shopping Cart</h2>
+	
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    <br><br>
+    <h3>Total Price: $<span id="total-price">0</span></h3>
+    <br><br>
+<div class="heading">
+			<h2>Our Customer feedback</h2>
+		</div>
+		<div class="costomers-container">
+			<div class="box">
+				<div class="stars">
+			<i class="fa-solid fa-star" style="color: gold;"></i> 
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>  
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: black;"></i>
+
+
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+			<h2>Mishel Fernando</h2>
+			<img src="img/download.jpg">
+			</div>
+			<div class="box">
+				<div class="stars">
+					<i class="fa-solid fa-star" style="color: gold;"></i> 
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>  
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: black;"></i>
+
+
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+			<h2>Lakmal Jayasinghe</h2>
+			<img src="img/OIP.jpg">
+			</div>
+			<div class="box">
+				<div class="stars">
+					<i class="fa-solid fa-star" style="color: gold;"></i> 
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: gold;"></i>  
+            <i class="fa-solid fa-star" style="color: gold;"></i>
+            <i class="fa-solid fa-star" style="color: black;"></i>
+
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+			<h2>Inoka Jayakodi</h2>
+			<img src="img/picture.jpg">
+			</div>
+		</div>
+</section>
+<!-- contacts -->
+<section class="contacts" id="contacts">
+	<div class="con">
+		<div class="con1">
+
+			<p>
+				
+				<p class="p2"><b><i>Contact Us<br>
+			-----------------<br>
+			<p class="p3">If you want a normal paragraph with text that naturally fits within two lines, you can use Lorem Ipsum text like this<br>
+			If you want a normal paragraph with text that naturally fits within two lines, 
+		you can use Lorem Ipsum </p></p>
+		</div>
+		<div class="body">
+			<div class="body1">
+		<div class="form">
+			<form onsubmit="return validateForm()">
+			<label>First Name</label><br>
+			<input type="text" id="firstName" name="name" placeholder="Enter First Name">
+			<label>Email</label><br>
+			<input type="text" id="email" name="name"placeholder="Enter Email">
+			<label>Message</label><br>
+			<input type="text" id="message" name="Message"placeholder="Enter Feedback">
+			<button type="submit">SEND TO US</button>
+		</form>
+		</div>
+		<div class="us">
+			<p>Hi!We are always have to help you</p>
+			<div class="hotline">
+				<p><img src="img/hotline.jpg">   Hotline:<br>
+					+94785624516
+				</p></div>
+				<div class="hotline">
+				<p><img src="img/sms.jpg">   Hotline:<br>
+					+94785624516
+				</p></div>
+				<div class="hotline">
+				<p><img src="img/email.jpg">   Hotline:<br>
+					+94785624516
+				</p>
+			</div>
+			</div>
+			</div>
+		
+
+ <div class="map">
+			<iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63317.23695612149!2d79.82410951623477!3d6.927078199306831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25960f4c9b55f%3A0xfaa3e049abcf9a2c!2sColombo%20City%20Centre!5e0!3m2!1sen!2slk!4v1710512345678" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>  
+</div>
+<br>
+<br>
+<br>
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>CERAMO</h2>
+            <p>join with us :</p>
+            <div class="social-icons">
+                <a href="#"><img src="img/fb1.jpg" width="50px" height="50px"></a>
+                <a href="#"><img src="img/ins.jpg" width="50px" height="50px"></a>
+                <a href="#"><img src="img/whatsapp.jpg" width="50px" height="50px"></a>
+                <a href="#"><img src="img/twi.jpg" width="50px" height="50px"></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-services">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Dinner ware</a></li>
+                <li><a href="#">Home ware</a></li>
+                <li><a href="#">Table ware</a></li>
+                <li><a href="#">Bolls</a></li>
+                <li><a href="#">Coffee Cups</a></li>
+                <li><a href="#">Ceramic Plate</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <h3>Information</h3>
+            <p>📞 +94785624516</p>
+            <p>📧 ceramo@website.com</p>
+            <p>📍 99 Roving St, Big City, P042 2346</p>
+            <p>🕒 Mon - Sat: 9:00 - 21:00</p>
+            <p>🕒 Sunday: Closed</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 All Rights Reserved. Designed by <a href="#">Romtheme</a></p>
+    </div>
+</footer>
+
+</section>
+<script src="ceramo.js"></script>
+</body>
+</html>
